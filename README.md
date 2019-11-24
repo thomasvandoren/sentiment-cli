@@ -1,6 +1,8 @@
 # sentiment-cli
 CLI utility for easily running sentiment analysis on text.
 
+Configure your terminal to use AWS Comprehend, e.g. by setting AWS_PROFILE env var or running `aws configure`.
+
 ```
 pipenv install
 pipenv run python sentiment.py # when there are no args, it uses pasteboard
