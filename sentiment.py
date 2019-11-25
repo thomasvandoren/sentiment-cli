@@ -10,7 +10,7 @@ def cli(text):
         try:
             pbpaste_result = subprocess.check_output(['pbpaste'])
             combined_text = str(pbpaste_result, 'utf8')
-        except NotADirectoryError:
+        except (FileNotFoundError, subprocess.SubprocessError):
             combined_text = 'hi, how are you? it is lovely to meet'
 
     aws_session = boto3.Session()
