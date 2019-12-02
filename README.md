@@ -6,7 +6,7 @@ Configure your terminal to use AWS Comprehend, e.g. by setting AWS_PROFILE env v
 ```
 pipenv install
 pipenv run python sentiment.py # when there are no args, it uses pasteboard
-pipenv run pythhon sentiment.py "oh hi, i'm surprised to meet you here"
+pipenv run python sentiment.py "oh hi, i'm surprised to meet you here"
 ```
 
 Example (if the terminal supports color output, it will be marked up):
